@@ -3,9 +3,10 @@ Database models for CorpMeet-AI application.
 Defines the Meeting model for storing meeting minutes and related data.
 """
 
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
 import json
+from datetime import datetime
+
+from flask_sqlalchemy import SQLAlchemy
 
 # Initialize SQLAlchemy database instance
 db = SQLAlchemy()

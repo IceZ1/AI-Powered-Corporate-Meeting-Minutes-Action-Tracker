@@ -3,24 +3,26 @@ CorpMeet-AI: AI-Powered Corporate Meeting Minutes & Action Tracker
 Main Flask application with all routes and functionality.
 """
 
+import os
+
+from docx import Document
 from flask import (
     Flask,
+    flash,
+    jsonify,
+    redirect,
     render_template,
     request,
-    redirect,
-    url_for,
-    flash,
     send_file,
-    jsonify,
+    url_for,
 )
 from werkzeug.utils import secure_filename
-import os
-from docx import Document
+
+from ai_processor import process_meeting_transcript
 
 # Import our custom modules
-from models import db, Meeting
-from ai_processor import process_meeting_transcript
-from pdf_generator import create_meeting_minutes_pdf, create_downloads_directory
+from models import Meeting, db
+from pdf_generator import create_downloads_directory, create_meeting_minutes_pdf
 
 # Initialize Flask application
 app = Flask(__name__)

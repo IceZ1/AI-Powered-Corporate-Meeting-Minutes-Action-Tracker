@@ -3,9 +3,9 @@ AI processing module for CorpMeet-AI application.
 Contains functions to process meeting transcripts and extract structured data.
 """
 
+import random
 import re
 from datetime import datetime, timedelta
-import random
 
 
 def process_meeting_transcript(transcript_text):
@@ -191,6 +191,7 @@ def validate_openai_api_key():
         bool: True if API key is configured, False otherwise
     """
     import os
+
     from dotenv import load_dotenv
 
     load_dotenv()
