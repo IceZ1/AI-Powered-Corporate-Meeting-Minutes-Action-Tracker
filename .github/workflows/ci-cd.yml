@@ -91,7 +91,7 @@ jobs:
         bandit -r . -f json -o bandit-report.json -ll || true
 
     - name: 📊 Upload Security Reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: security-reports
@@ -128,7 +128,7 @@ jobs:
         python -m build
 
     - name: 📊 Upload Build Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dist
         path: dist/
@@ -227,7 +227,7 @@ jobs:
         locust --headless --users 10 --spawn-rate 2 --run-time 1m --host http://localhost:5000 -f tests/performance/locustfile.py || true
 
     - name: 📊 Upload Performance Results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: performance-results
@@ -270,7 +270,7 @@ jobs:
         axe http://localhost:5000 --tags wcag2a,wcag2aa --reporter json --output-file axe-results.json || true
 
     - name: 📊 Upload Accessibility Results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: accessibility-results

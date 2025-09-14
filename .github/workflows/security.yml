@@ -110,7 +110,7 @@ jobs:
         echo "4. Run tests to ensure fixes don't break functionality" >> security-summary.md
 
     - name: 📤 Upload Security Reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: security-reports
