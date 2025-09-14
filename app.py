@@ -100,7 +100,7 @@ def process_transcript():
             flash("No file selected", "error")
             return redirect(url_for("upload_page"))
 
-        if file and allowed_file(file.filename):
+        if file and file.filename and allowed_file(file.filename):
             # Save uploaded file
             filename = secure_filename(file.filename)
             filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)

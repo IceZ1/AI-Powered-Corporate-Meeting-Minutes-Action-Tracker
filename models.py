@@ -5,14 +5,15 @@ Defines the Meeting model for storing meeting minutes and related data.
 
 import json
 from datetime import datetime
+from typing import Any, Dict, List, Optional
 
 from flask_sqlalchemy import SQLAlchemy
 
-# Initialize SQLAlchemy database instance
-db = SQLAlchemy()
+# Initialize SQLAlchemy database instance with explicit type annotation
+db: SQLAlchemy = SQLAlchemy()
 
 
-class Meeting(db.Model):  # type: ignore
+class Meeting(db.Model):
     """
     Meeting model to store meeting minutes, action items, and decisions.
 
@@ -42,7 +43,14 @@ class Meeting(db.Model):  # type: ignore
     # Original transcript for reference
     original_transcript = db.Column(db.Text, nullable=False)
 
-    def __init__(self, title, summary, action_items, decisions, original_transcript):
+    def __init__(
+        self,
+        title: str,
+        summary: List[str],
+        action_items: List[Dict[str, Any]],
+        decisions: List[str],
+        original_transcript: str,
+    ) -> None:
         """
         Initialize a new Meeting record.
 
@@ -63,28 +71,28 @@ class Meeting(db.Model):  # type: ignore
         )
         self.original_transcript = original_transcript
 
-    def get_summary(self):
+    def get_summary(self) -> List[str]:
         """Get summary as a Python list."""
         try:
             return json.loads(self.summary) if self.summary else []
         except json.JSONDecodeError:
             return []
 
-    def get_action_items(self):
+    def get_action_items(self) -> List[Dict[str, Any]]:
         """Get action items as a Python list."""
         try:
             return json.loads(self.action_items) if self.action_items else []
         except json.JSONDecodeError:
             return []
 
-    def get_decisions(self):
+    def get_decisions(self) -> List[str]:
         """Get decisions as a Python list."""
         try:
             return json.loads(self.decisions) if self.decisions else []
         except json.JSONDecodeError:
             return []
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         """String representation of the Meeting object."""
         return (
             f'<Meeting {self.title} - {self.date_created.strftime("%Y-%m-%d %H:%M")}>'
