@@ -12,7 +12,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 
-class Meeting(db.Model):
+class Meeting(db.Model):  # type: ignore
     """
     Meeting model to store meeting minutes, action items, and decisions.
 
